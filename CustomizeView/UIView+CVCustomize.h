@@ -12,7 +12,7 @@ typedef void(^CVCustomizeViewBlock)(UIView *view);
  Custom style name. Setting this value will apply style code on this view.
  Style code is registered through registerStyle:... method.
  */
-@property (nonatomic,copy) NSString *style;
+@property (nonatomic,copy) IBInspectable NSString *style;
 
 
 +(void)registerStyle:(NSString*)style withCustomizeBlock:(CVCustomizeViewBlock)customizeBlock;
